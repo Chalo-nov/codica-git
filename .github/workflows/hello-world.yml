@@ -1,9 +1,9 @@
 name: Hello World Workflow
 on: [push]
 jobs:
-  job1:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Corriendo el saludo
+      - name: Ejecutar saludo desde Makefile
         run: make say-hello
