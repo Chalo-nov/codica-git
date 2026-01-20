@@ -1,0 +1,22 @@
+name: Workflow de Aplicación
+on: [push]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalación de dependencias
+        run: make install
+
+      - name: Ejecución de Linter
+        run: make lint
+
+      - name: Ejecución de Pruebas
+        run: make test
