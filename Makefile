@@ -1,15 +1,16 @@
-setup: install build
+setup: 
+	install build
 
 install:
-npm install
+	npm install
 
 build:
-npm run build
+	npm run build
 
 test:
-npm test
+	npm test
 
 lint:
-npx eslint .
+	npx eslint
 
 .PHONY: build
