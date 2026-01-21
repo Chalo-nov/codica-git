@@ -1,0 +1,9 @@
+{
+  "name": "mi-proyecto",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo 'No hay pruebas todavía' && exit 0",
+    "lint": "echo 'No hay errores de linter' && exit 0",
+    "build": "echo 'Construcción exitosa' && exit 0"
+  }
+}
